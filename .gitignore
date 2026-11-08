@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# Assignment reference files (keep local, do not publish)
+/CRM.pdf
+/Desain.png
+/HRhd2Y0.png
+/Screenshot*.png
