@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -14,6 +16,10 @@ from src.ui import (
 
 
 st.set_page_config(page_title="Loyalitas | Sora CRM", layout="wide")
+st.logo(
+    str(Path(__file__).resolve().parent.parent / "assets" / "sora_logo.svg"),
+    size="large",
+)
 apply_theme()
 facts = get_order_facts()
 start_date, end_date, states = render_filters(facts, show_period=False)

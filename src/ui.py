@@ -17,6 +17,7 @@ COLORS = {
     "paper": "#FFFDF9",
 }
 
+
 def apply_theme() -> None:
     st.markdown(
         """

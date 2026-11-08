@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import streamlit as st
 import plotly.express as px
 
@@ -13,6 +15,10 @@ from src.ui import (
 
 
 st.set_page_config(page_title="Produk & strategi | Sora CRM", layout="wide")
+st.logo(
+    str(Path(__file__).resolve().parent.parent / "assets" / "sora_logo.svg"),
+    size="large",
+)
 apply_theme()
 data = load_data()
 facts = get_order_facts()

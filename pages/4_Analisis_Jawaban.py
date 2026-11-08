@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -21,6 +23,10 @@ from src.ui import (
 
 
 st.set_page_config(page_title="Analisis & jawaban | Sora CRM", layout="wide")
+st.logo(
+    str(Path(__file__).resolve().parent.parent / "assets" / "sora_logo.svg"),
+    size="large",
+)
 apply_theme()
 
 data = load_data()
